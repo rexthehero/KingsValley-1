@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingsValley1", "KingsValley1\KingsValley1\KingsValley1.csproj", "{E1AB494C-9535-4E29-87A8-0794E227117C}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "KingsValley1Content", "KingsValley1\KingsValley1Content\KingsValley1Content.contentproj", "{2EC97A66-4CDC-4EC3-9F0B-03CAC96D8F9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1AB494C-9535-4E29-87A8-0794E227117C}.Debug|x86.ActiveCfg = Debug|x86
+		{E1AB494C-9535-4E29-87A8-0794E227117C}.Debug|x86.Build.0 = Debug|x86
+		{E1AB494C-9535-4E29-87A8-0794E227117C}.Release|x86.ActiveCfg = Release|x86
+		{E1AB494C-9535-4E29-87A8-0794E227117C}.Release|x86.Build.0 = Release|x86
+		{2EC97A66-4CDC-4EC3-9F0B-03CAC96D8F9B}.Debug|x86.ActiveCfg = Debug|x86
+		{2EC97A66-4CDC-4EC3-9F0B-03CAC96D8F9B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
