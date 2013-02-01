@@ -25,7 +25,7 @@ namespace KingsValley1
         protected override void Initialize()
         {
             IsMouseVisible = true;
-            this.graphics.PreferredBackBufferWidth = 640;
+            this.graphics.PreferredBackBufferWidth = 540;
             this.graphics.PreferredBackBufferHeight = 480;
             this.graphics.ApplyChanges();
             base.Initialize();
