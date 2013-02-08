@@ -20,7 +20,8 @@ namespace KingsValley1
         private Rectangle rectangle;
         private float speed = 1;
         private AnimatedSprite state;
-
+        private ExplorerWalkRight walkRight;
+        private ExplorerIdleRight idleRight;
 
         //Properties
         public Vector2 Position
@@ -49,6 +50,22 @@ namespace KingsValley1
             get { return this.rectangle; }
         }
 
+        public AnimatedSprite State
+        {
+            set { this.state = value; }
+        }
+
+        public ExplorerWalkRight WalkRight
+        {
+            set { this.walkRight = value; }
+            get { return this.walkRight; }
+        }
+
+        public ExplorerIdleRight IdleRight
+        {
+            get { return this.idleRight; }
+        }
+
         //Constructor
         public Explorer(KingsValley game, Vector2 position)
         {
@@ -59,7 +76,9 @@ namespace KingsValley1
                                            (int)this.position.Y,
                                            this.texture.Width / 8,
                                            this.texture.Height);
-            this.state = new ExplorerWalkRight(this);
+            this.walkRight = new ExplorerWalkRight(this);
+            this.idleRight = new ExplorerIdleRight(this);
+            this.state = new ExplorerIdleRight(this);
         }
 
         //Update

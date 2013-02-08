@@ -27,6 +27,10 @@ namespace KingsValley1
         public override void Update(GameTime gameTime)
         {
             this.explorer.Position += new Vector2(this.explorer.Speed, 0f);
+            if (Input.EdgeDetectKeyUp(Keys.Right))
+            {
+                this.explorer.State = this.explorer.IdleRight;
+            }
             base.Update(gameTime);
         }
 
