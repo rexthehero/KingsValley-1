@@ -31,6 +31,11 @@ namespace KingsValley1
             {
                 this.explorer.State = this.explorer.IdleRight;
             }
+            if (Input.DetectKeyDown(Keys.Space))
+            {
+                this.explorer.State = this.explorer.JumpRight;
+                this.explorer.JumpRight.Initialize();
+            }
             base.Update(gameTime);
         }
 

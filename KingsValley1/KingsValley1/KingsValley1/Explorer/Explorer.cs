@@ -22,6 +22,11 @@ namespace KingsValley1
         private AnimatedSprite state;
         private ExplorerWalkRight walkRight;
         private ExplorerIdleRight idleRight;
+        private ExplorerWalkLeft walkLeft;
+        private ExplorerIdleLeft idleLeft;
+        private ExplorerJumpRight jumpRight;
+        private ExplorerJumpLeft jumpLeft;
+        private ExplorerIdleJumpRight idleJumpRight;
 
         //Properties
         public Vector2 Position
@@ -49,21 +54,38 @@ namespace KingsValley1
         {
             get { return this.rectangle; }
         }
-
         public AnimatedSprite State
         {
             set { this.state = value; }
         }
-
         public ExplorerWalkRight WalkRight
         {
             set { this.walkRight = value; }
             get { return this.walkRight; }
         }
-
         public ExplorerIdleRight IdleRight
         {
             get { return this.idleRight; }
+        }
+        public ExplorerWalkLeft WalkLeft
+        {
+            get { return this.walkLeft; }
+        }
+        public ExplorerIdleLeft IdleLeft
+        {
+            get { return this.idleLeft; }
+        }
+        public ExplorerJumpRight JumpRight
+        {
+            get { return this.jumpRight; }
+        }
+        public ExplorerJumpLeft JumpLeft
+        {
+            get { return this.jumpLeft; }
+        }
+        public ExplorerIdleJumpRight IdleJumpRight
+        {
+            get { return this.idleJumpRight; }
         }
 
         //Constructor
@@ -78,6 +100,11 @@ namespace KingsValley1
                                            this.texture.Height);
             this.walkRight = new ExplorerWalkRight(this);
             this.idleRight = new ExplorerIdleRight(this);
+            this.walkLeft = new ExplorerWalkLeft(this);
+            this.idleLeft = new ExplorerIdleLeft(this);
+            this.jumpRight = new ExplorerJumpRight(this, 20, 32);
+            this.jumpLeft = new ExplorerJumpLeft(this, -20, 32);
+            this.idleJumpRight = new ExplorerIdleJumpRight(this, 20, 32);
             this.state = new ExplorerIdleRight(this);
         }
 
