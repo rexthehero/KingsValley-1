@@ -31,7 +31,7 @@ namespace KingsValley1
             {
                 this.explorer.State = this.explorer.IdleRight;
             }
-            if (Input.DetectKeyDown(Keys.Space))
+            if (Input.EdgeDetectKeyDown(Keys.Space))
             {
                 this.explorer.State = this.explorer.JumpRight;
                 this.explorer.JumpRight.Initialize();

@@ -33,7 +33,7 @@ namespace KingsValley1
             {
                 this.explorer.State = this.explorer.WalkLeft;
             }
-            if (Input.DetectKeyDown(Keys.Space))
+            if (Input.EdgeDetectKeyDown(Keys.Space))
             {
                 this.explorer.State = this.explorer.IdleJumpRight;
                 this.explorer.IdleJumpRight.Initialize();
